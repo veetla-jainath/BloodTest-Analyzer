@@ -69,7 +69,7 @@ A comprehensive AI-powered blood test analysis system built with CrewAI, FastAPI
 
 1. **Clone the repository**
 ```bash
-git clone <your-repo-url>
+git clone <https://github.com/veetla-jainath/BloodTest-Analyzer.git>
 cd blood-test-analyzer
 ```
 
@@ -88,7 +88,7 @@ pip install -r requirements.txt
 Create a `.env` file in the root directory:
 ```env
 # Required: OpenAI Configuration
-OPENAI_API_KEY=your_openai_api_key_here
+GEMINI_API_KEY=your_openai_api_key_here
 
 # Optional: Serper Dev API for web search
 SERPER_API_KEY=your_serper_api_key_here
@@ -122,15 +122,14 @@ uvicorn main:app --host 0.0.0.0 --port 8000 --workers 4
 ### API Endpoints
 
 The server will start on `http://localhost:8000`
-
 - **API Documentation**: `http://localhost:8000/docs`
 - **Alternative Docs**: `http://localhost:8000/redoc`
 
 ### Basic Usage
-
+**open:
 1. **Health Check**
 ```bash
-curl http://localhost:8000/
+curl http://localhost:8000/docs#
 ```
 
 2. **Analyze Blood Report**
